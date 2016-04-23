@@ -38,11 +38,11 @@ var dataModel = {
                     self.redirect();
                 }, 5000);
             }, null, null);
-        else {
+        else {//hata alma durumu if kýsmýnda olacak
             $('#success').html("<div class='alert alert-danger'>");
             $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                 .append("</button>");
-            $('#success > .alert-danger').append("<strong>Merhaba " + firstName + ". Bilinmeyen hata oluþtu...</strong> Bize mail atmanýzý rica ederiz ! <a href='mailto:info@kociletisim.com.tr' from mail.google.com;>info@kociletisim.com.tr</a>");
+            $('#success > .alert-danger').append("<strong>Merhaba " + dataModel.name + ". Bilinmeyen hata oluþtu...</strong> Bize mail atmanýzý rica ederiz ! <a href='mailto:info@kociletisim.com.tr' from mail.google.com;>info@kociletisim.com.tr</a>");
             $('#success > .alert-danger').append('</div>');
         }
     },
